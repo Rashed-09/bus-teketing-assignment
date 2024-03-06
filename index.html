@@ -7,15 +7,21 @@
      <!-- daisyUI link  -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
+     <!-- raleway font family  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- connect with css  -->
+     <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="">
      <!-- navbar section  -->
      <section class="w-4/5 mx-auto">
-          <nav class="flex  justify-between p-10">
-               <div><h1>P-Ticket</h1></div>
+          <nav class="lg:flex lg:justify-between p-10">
+               <div><h1 class="text-5xl font-bold">P-Ticket</h1></div>
 
-               <div>
-                    <ul>
+               <div class="py-3">
+                    <ul class=" lg:flex gap-10 pt-4">
                          <li>Home</li>
                          <li>About</li>
                          <li>Destinaion</li>
@@ -23,8 +29,91 @@
                     </ul>
                </div>
 
-               <div>Bus <img src="images/bus-icon.png" alt=""></div>
+               <div><button class="btn text-[#1DD100] font-bold text-xl">Bus<img src="images/bus-icon.png" alt=""></button></div>
           </nav>
      </section>
+
+     <!-- banner Section  -->
+     <div class="w-4/5 mx-auto bg-[url(./images/banner.png)] bg-no-repeat bg-cover bg-center rounded-3xl">
+          <div class="hero min-h-screen my-8 lg:my-6">
+               <div class="hero-content text-center raleway-font ">
+                 <div class="max-w-screen-lg space-y-4">
+                   <h1 class="text-3xl lg:text-6xl font-semibold lg:font-extrabold text-white">End-to-End Travel with</h1>
+                   <h1 class="text-3xl lg:text-6xl font-semibold lg:font-bold bg-green-color">P Paribahan</h1>
+                   <p class="py-6 text-white">Green Line Paribahan is apparently a family owned transport company specializing in <br> transportation of passenger bus services since 1990.</p>
+                   <button class="btn font-extrabold border-none bg-[#1dd100] text-xl">By Tickets</button>
+                 </div>
+               </div>
+             </div>
+     </div>
+
+     <!-- update news section  -->
+     <div class="lg:w-3/5 mx-auto flex space-x-3 relative bottom-24 lg:bottom-20">
+
+          <!-- one site  -->
+          <div class="flex-1 bg-white border-b-2 border-[#1dd100] rounded-3xl flex justify-center items-center space-x-3 p-8 mx-2">
+               <div><img src="images/people.png" alt=""></div>
+               <div>
+                    <h2 class="text-5xl font-bold">500k+</h2>
+                    <p>Registered User</p>
+               </div>
+          </div>
+          
+          <!-- second site  -->
+          <div class="flex-1 bg-white border-b-2 border-[#1dd100] rounded-3xl flex justify-center items-center space-x-3 p-8 mx-2">
+               <div><img src="images/ticket-cupon.png" alt=""></div>
+               <div>
+                    <h2 class="text-5xl font-bold">1.7 lacks</h2>
+                    <p>Ticket Sold</p>
+               </div>
+          </div>
+          <!-- third site  -->
+          <div class="flex-1 bg-white border-b-2 border-[#1dd100] rounded-3xl flex justify-center items-center space-x-3 p-8 mx-2">
+               <div><img src="images/stoppage.png" alt=""></div>
+               <div>
+                    <h2 class="text-5xl font-bold">80k+</h2>
+                    <p>Rental Partners</p>
+               </div>
+          </div>
+
+     </div>
+
+     <!-- This is cuopon section  -->
+     <div class="w-full lg:w-4/5 mx-auto flex flex-col justify-center items-center">
+          <h1 class="text-4xl font-bold raleway-font">Best offers for You</h1>
+
+          <!-- mid parcentage cupon section  -->
+          <div class="flex space-x-6 my-12">
+               <!-- 15 parcentage discount  -->
+               <div class="bg-[#ffbf0f] p-10 flex justify-between space-x-20 rounded-3xl">
+                    <div>
+                         <h1 class="text-3xl lg:text-4xl inter-font font-extrabold">15% OFF</h1>
+                         <p class="font-medium">on our next purchase</p>
+                         <p class="text-slate-500">use by january 2024</p>
+                    </div>
+                         
+                    <div class="raleway-font">
+                         <h1 class="text-2xl font-bold">NEW 15</h1>
+                         <p class="text-slate-500">coupon code</p>
+                    </div>
+               </div>
+
+               <!-- 20 parcentage discount  -->
+               <div class="bg-[#F78C9C] p-10 flex justify-between space-x-20 rounded-3xl">
+                    <div>
+                         <h1 class="text-3xl lg:text-4xl inter-font font-extrabold">20% OFF</h1>
+                         <p class="font-medium">on our next purchase</p>
+                         <p class="text-slate-500">use by january 2024</p>
+                    </div>
+                         
+                    <div class="raleway-font">
+                         <h1 class="text-2xl font-bold">couple 20</h1>
+                         <p class="text-slate-500">coupon code</p>
+                    </div>
+               </div>
+          </div>
+          <button class="btn btn-outline font-bold text-base bg-green-color">See All Offers</button>
+
+     </div>
 </body>
 </html>
