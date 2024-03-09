@@ -190,7 +190,6 @@
                     <!-- every seat for a to j  -->
                     <div class="pl-5">
                          
-
                          <div class="w-[95%] grid grid-cols-5 gap-6">
                               <p class="flex items-center">A</p>
                               <button id="A1" class="btn">A1</button>
@@ -256,10 +255,85 @@
                     
                </div>
 
-               </div>
                <!-- seat details part  -->
-               <div class="w-[39%]"></div>
+               <div class="w-[39%] ml-5">
+                    <h1 class="text-3xl font-bold py-5">Select Your Seat</h1><hr>
+                    <div class="bg-gray-200 rounded-3xl p-5 my-5">
+                         <!-- economy title  -->
+                         <div class="flex justify-between pb-5 border-b-2 border-dotted border-slate-400">
+                              <h5 class="text-sm font-extrabold text-black">Seat<span class="bg-[#1dd100] px-2 rounded mx-1 py-0 text-white">1</span></h5>
+                              <h5 class="text-sm font-extrabold text-black">Class</h5>
+                              <h5 class="text-sm font-extrabold text-black">Price</h5>
+                         </div>
+
+                         <!-- selected seat is here  -->
+                         <div class="flex justify-between border-slate-400 border-b-2 pb-5">
+                              
+                         </div>
+                         <!-- total money is  -->
+                         <div class="flex justify-between py-2 inter-font">
+                              <h5 class="font-bold">Total Price</h5>
+                              <h5 class="font-bold">BDT <span>0</span></h5>
+                         </div>
+
+                         <!-- input coupon  -->
+                         <div>
+                              <input type="text" placeholder="Have any coupon?" class="p-3 w-full rounded-md relative">
+                              <button class="bg-[#1dd100] text-white font-extrabold text-sm px-4 py-2 absolute rounded-md left-[1520px] mt-1.5">Apply</button>
+                         </div>
+                         <div class="flex justify-between inter-font font-bold py-5">
+                              <h5>Grand Total</h5>
+                              <h5>BDT<span> 0</span></h5>
+                         </div>
+                    </div>
+
+                    <h5 class="font-extrabold inter-font">Passenger Name*</h5>
+                    <input type="text" class="w-full border-2 h-14 rounded-md p-3 my-4" placeholder="Enter Your Name" id="">
+                    <h5 class="font-extrabold inter-font">Phone Number*</h5>
+                    <input type="number" class="w-full border-2 h-14 rounded-md p-3 my-4" placeholder="Enter Your Phone Number" id="">
+                    <h5 class="font-extrabold inter-font">Email ID*</h5>
+                    <input type="text" class="w-full border-2 h-14 rounded-md p-3 my-4" placeholder="Enter Your Email ID" id="">
+                    <button class="btn bg-[#1dd100] text-white inter-font font-medium w-full my-5 text-xl">Next</button>
+                    <div class="flex justify-around my-5">
+                         <h5 class="text-slate-500 decoration-solid"><u>Terms And Conditions</u></h5>
+                         <h5 class="text-slate-500 decoration-solid"><u>Cancellation Policy</u></h5>
+                    </div>
+               </div>
           </div>
      </main>
+
+     <!-- footer section  -->
+     <footer class="bg-black text-white">
+          <div class="w-4/5 mx-auto p-20">
+               <!-- p ticket  -->
+               <div class="flex justify-between py-16 border-b my-5 border-slate-500 border-dashed">
+                    <div>
+                         <h2 class="text-2xl font-bold mb-3">P-Ticket</h2>
+                         <h2>P-ticket is a disital platform to make you</h2>
+                         <h2>daily communiting  better</h2>
+                    </div>
+                    <div>
+                         <h2 class="text-center raleway-font">Download our app</h2>
+                         <div class="flex border p-3 rounded-md space-x-2 mt-3">
+                              <img src="images/playstore.png.png" alt="">
+                              <div>
+                                   <p>Get it on</p>
+                                   <h2>Google Play</h2>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               
+
+               <div class="flex justify-between my-5">
+                    <h4 class="font-light text-gray-500">@all roghts reserved, P-Ticket services limited.2024</h4>
+                    <div class="flex space-x-4 font-light text-sm">
+                         <p>Turms $ Condition</p>
+                         <p>Return $ Refund Policy</p>
+                         <p>Privacy Policy</p>
+                    </div>
+               </div>
+          </div>
+     </footer>
 </body>
 </html>
